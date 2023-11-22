@@ -103,7 +103,7 @@ class Ui_mainWindow(object):
         font.setPointSize(32)
         self.logo_1 = QtWidgets.QLabel(mainWindow)
         self.logo_1.setEnabled(True)
-        self.logo_1.setGeometry(QtCore.QRect(75, 202, 111, 51))
+        self.logo_1.setGeometry(QtCore.QRect(80, 202, 111, 51))
         self.logo_1.setFont(font)
         self.logo_1.setStyleSheet('background-color:rgba(0,0,0,0);\n''color:rgb(255,255,255);')
         self.logo_1.setObjectName('logo_1')
