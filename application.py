@@ -33,7 +33,7 @@ class Ui_mainWindow(object):
     def trainModel(self):
         self.result.setGeometry(QtCore.QRect(250, 365, 305, 51))
         self.result.setStyleSheet('background-color:rgba(0,0,0,0.5);\n''color:white;\n''border-radius:25px')
-        self.result.setText('            Trained!')
+        self.result.setText('               Trained!')
         self.delay = QTimer()
         self.delay.start(1500)
         self.delay.timeout.connect(self.resetLabel)
@@ -103,7 +103,7 @@ class Ui_mainWindow(object):
         font.setPointSize(32)
         self.logo_1 = QtWidgets.QLabel(mainWindow)
         self.logo_1.setEnabled(True)
-        self.logo_1.setGeometry(QtCore.QRect(80, 202, 111, 51))
+        self.logo_1.setGeometry(QtCore.QRect(90, 202, 111, 51))
         self.logo_1.setFont(font)
         self.logo_1.setStyleSheet('background-color:rgba(0,0,0,0);\n''color:rgb(255,255,255);')
         self.logo_1.setObjectName('logo_1')
