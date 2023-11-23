@@ -8,6 +8,7 @@ import os
 import numpy as np
 from PIL import Image
 from picamera import Picamera2
+import shutil
 
 cwd = os.getcwd()
 master_path = cwd.replace('\\','/') + '/'
@@ -523,6 +524,9 @@ class Ui_authWindow(object):
 
     def storeAuth(self):
         if self.pinLine.text() == '12345':
+            path = master_path + 'Attendance/'
+            for file in os.listdir(path):
+                shutil.copy(path + file, path + file)
             self.openMain()
             self.authWindow.close()
         else:
