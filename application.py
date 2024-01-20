@@ -7,7 +7,7 @@ from datetime import datetime
 import os
 import numpy as np
 from PIL import Image
-from picamera import Picamera2
+from picamera2 import Picamera2
 import shutil
 
 cwd = os.getcwd()
