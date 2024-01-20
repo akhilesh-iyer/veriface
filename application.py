@@ -35,7 +35,7 @@ class Ui_mainWindow(object):
     def trainModel(self):
         self.result.setGeometry(QtCore.QRect(250, 365, 305, 51))
         self.result.setStyleSheet('background-color:rgba(0,0,0,0.5);\n''color:white;\n''border-radius:25px')
-        self.result.setText('              Trained!')
+        self.result.setText('                Trained!')
         self.delay = QTimer()
         self.delay.start(1500)
         self.delay.timeout.connect(self.resetLabel)
@@ -533,7 +533,7 @@ class Ui_authWindow(object):
         else:
             self.result.setGeometry(QtCore.QRect(250, 365, 305, 51))
             self.result.setStyleSheet('background-color:rgba(0,0,0,0.5);\n''color:white;\n''border-radius:25px')
-            self.result.setText('            Wrong pin!')
+            self.result.setText('              Wrong pin!')
             self.delay = QTimer()
             self.delay.start(1500)
             self.delay.timeout.connect(self.resetLabel)
